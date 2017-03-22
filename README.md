@@ -1,3 +1,9 @@
+An old TI83p assembly tetris clone I did a while back (~2006)
+
+Source code: tetrisjd.asm
+
+*** Original README below ***
+
 Tetris JD V1.1, By Jean-Denis Boivin
 
 (c) 2006 Team-Atemis, http://team-atemis.com/
