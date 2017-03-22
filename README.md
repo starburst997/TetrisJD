@@ -2,6 +2,11 @@ An old TI83p assembly tetris clone I did a while back (~2006)
 
 Source code: tetrisjd.asm
 
+![Screenshot 1](/screen1.gif?raw=true "Screen 1")
+![Screenshot 2](/screen2.gif?raw=true "Screen 2")
+![Screenshot 3](/screen3.gif?raw=true "Screen 3")
+![Screenshot 4](/screen4.gif?raw=true "Screen 4")
+
 *** Original README below ***
 
 Tetris JD V1.1, By Jean-Denis Boivin
