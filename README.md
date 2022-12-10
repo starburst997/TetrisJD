@@ -4,8 +4,8 @@
 
 An old TI83p assembly ([Z80](https://en.wikipedia.org/wiki/Zilog_Z80)) tetris clone I did a while back (~2006)
 
-Source code: [tetrisjd.asm](tetrisjd.asm)
-Binary: [TETRISJD.8xg](bin/TETRISJD.8xg)
+- Source code: [tetrisjd.asm](tetrisjd.asm)
+- Binary: [TETRISJD.8xg](bin/TETRISJD.8xg)
 
 **LAUNCH THE GAME BY SELECTING THE PROGRAM TETRIS**
 
