@@ -6,8 +6,6 @@
 	.DB     t2ByteTok, tAsmCmp
 												; TetrisJD V1.1 Build 20060507
 												; Par Jean-Denis Boivin (jeandenis.boivin@gmail.com)
-												; (c) 2006 Team-Atemis
-												; http://team-atemis.com
 LBL_start_prog:
 			B_CALL(_ClrLCDFull)
 			B_CALL(_GrBufClr)
@@ -370,7 +368,7 @@ CAL_getformat:
 	CP		73
 	JP		Z, LBL_draw_piece_7_3
 	RET
-ARR_score:										; Début Score
+ARR_score:										; DÃ©but Score
 	.DB		48,48,48,48,48,48,48,48,48,0
 ARR_score_buf:
 	.DB		0,0,0,0,0,0,0,0,0,0
@@ -545,7 +543,7 @@ CAL_draw_piece:
 	LD		(HL), A
 	CALL	CAL_put_piece_mtx
 	RET
-CAL_draw_next_piece:							; Début Next Piece
+CAL_draw_next_piece:							; DÃ©but Next Piece
 	LD		HL, INT_sp_piece_relx
 	LD		(HL), 18
 	LD		HL, INT_sp_piece_rely
@@ -588,7 +586,7 @@ LBL_next_piece_mtx_addy:
 	CALL	CAL_checkup_mtx_5
 	RET		Z
 	JP		LBL_next_piece_mtx					; Fin Next Piece
-CAL_put_piece_mtx:								; Début Mettre Piece dans MTX
+CAL_put_piece_mtx:								; DÃ©but Mettre Piece dans MTX
 	CALL	CAL_checkup_mtx_1
 	JP		LBL_put_piece_mtx
 LBL_put_piece_mtx:
@@ -613,7 +611,7 @@ LBL_put_piece_mtx_addy:
 	CALL	CAL_checkup_mtx_5
 	RET		Z
 	JP		LBL_put_piece_mtx					; Fin Mettre Piece dans MTX
-CAL_check_for_collision:						; Début Check Collision
+CAL_check_for_collision:						; DÃ©but Check Collision
 	CALL	CAL_checkup_mtx_1
 	LD		HL, INT_collision_detecte
 	LD		(HL), 0
@@ -661,7 +659,7 @@ CAL_collision_detecte:
 	RET											; Fin Check Collision
 INT_coll_buf2:
 	.DB		0
-CAL_collision_bas:								; Début Collision Bas
+CAL_collision_bas:								; DÃ©but Collision Bas
 	LD		A, (INT_piece_rely)
 	CP		15
 	JP		Z, LBL_quit
@@ -1223,7 +1221,7 @@ CAL_checkup_mtx_5:
 	LD		(HL), A
 	CP		4
 	RET
-CAL_update_piece:								; Début Update Piece
+CAL_update_piece:								; DÃ©but Update Piece
 	LD		HL, INT_anc_or_new
 	LD		(HL), 1
 	CALL	CAL_check_for_collision
@@ -1379,7 +1377,7 @@ CAL_getskin:
 	CP		7
 	JP		Z, LBL_ppiece_skin_7
 	RET
-CAL_ppiece_on:									; Début Affiche une ppiece
+CAL_ppiece_on:									; DÃ©but Affiche une ppiece
 	LD		HL, INT_ppiece_on
 	LD		(HL), 1
 	LD		HL, INT_ppiece_x
