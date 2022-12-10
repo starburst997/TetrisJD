@@ -1,10 +1,11 @@
-<p align="center"><img src="screen3.gif" alt="Screenshot 1">&nbsp;&nbsp;&nbsp;<img src="screen4.gif" alt="Screenshot 2"></p>
+<p align="center"><img src="screenshots/screen3.gif" alt="Screenshot 1">&nbsp;&nbsp;&nbsp;<img src="screenshots/screen4.gif" alt="Screenshot 2"></p>
 
 # Tetris JD
 
 An old TI83p assembly ([Z80](https://en.wikipedia.org/wiki/Zilog_Z80)) tetris clone I did a while back (~2006)
 
 Source code: [tetrisjd.asm](tetrisjd.asm)
+Binary: [bin/TETRISJD.8xg](TETRISJD.8xg)
 
 **LAUNCH THE GAME BY SELECTING THE PROGRAM TETRIS**
 
